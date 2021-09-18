@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>CommonRoom</title>
+
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+
+  </head>
+  <body>
+    <div id="navcontainer">
+        <img src="static/img/logo_.svg" alt="logo">
+        <div id="nav-pages">
+            <a class="nav-items">home</a>
+            <i class="fa fa-circle"></i>
+            <a class="nav-items">new friends</a>
+            <i class="fa fa-circle"></i>
+            <a class="nav-items">explore</a>
+            <i class="fa fa-circle"></i>
+            <a class="nav-items">meet-up</a>
+        </div>
+        <form>
+          <input type="text" placeholder="Search interests ...">
+        </form>
+    </div>
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>
