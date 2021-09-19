@@ -19,7 +19,7 @@ body {
 
 .nav-items {
     color: #EBE3D5 !important;
-    font-size: 18pt;
+    font-size: 16pt;
     text-decoration: none;
     text-align: center;
     cursor: pointer;
@@ -46,4 +46,6 @@ body {
 input {
     border-radius: 10px;
     background-color: #146a9c4d;
+    height: 2em;
+    color: white;
 }
