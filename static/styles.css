@@ -4,6 +4,10 @@ body {
     font-family: "Inter", non-serif;
 }
 
+.body-img {
+    width: 100vw !important;
+}
+
 #navcontainer {
     background-color: #146a9c;
     display: flex;
@@ -15,8 +19,15 @@ body {
 
 .nav-items {
     color: #EBE3D5 !important;
+    font-size: 18pt;
     text-decoration: none;
     text-align: center;
+    cursor: pointer;
+}
+
+.nav-items:hover {
+    text-decoration: underline #FF9639;
+    font-weight: bold;
 }
 
 #nav-pages {

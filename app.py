@@ -1,12 +1,22 @@
-# app.py
-
-# Required imports
-import os
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, redirect, session, jsonify
 from firebase_admin import credentials, firestore, initialize_app
 
-# Initialize Flask app
 app = Flask(__name__)
+
+app.config["TEMPLATES_AUTO_RELOAD"] = True
+
+@app.route("/", methods=["GET"])
+def index():
+    return render_template("index.html")
+
+@app.route("/friends", methods=["GET"])
+def friends():
+    return render_template("friends.html")
+
+@app.route("/explore", methods=["GET"])
+def explore():
+    return render_template("explore.html")
+
 
 # Initialize Firestore DB
 cred = credentials.Certificate('key.json')
@@ -74,6 +84,7 @@ def delete():
     except Exception as e:
         return f"An Error Occured: {e}"
 
-port = int(os.environ.get('PORT', 8080))
+
+
 if __name__ == '__main__':
-    app.run(threaded=True, host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=80) 

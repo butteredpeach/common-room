@@ -2,7 +2,10 @@
 
 {% block body %}
 
-<!-- insert html code that would be inserted into block body in layout.html :) -->
+<img class="body-img" src="static/img/home.png" alt="home">
 
-
+<script>
+    console.log(document.getElementById('home-btn'));
+    document.getElementById('home-btn').style.fontWeight = 'bold';
+</script>
 {% endblock %}
