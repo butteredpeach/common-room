@@ -1,10 +1,11 @@
 body {
     background-color: #072C42;
     margin: 0;
+    font-family: "Inter", non-serif;
 }
 
 #navcontainer {
-    background-color: #146a9ca8;
+    background-color: #146a9c;
     display: flex;
     flex-direction: row;
     align-items: center;
