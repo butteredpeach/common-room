@@ -1,3 +1,3 @@
 # CommonRoom
-For HTN 2021!
-fefewjfeiwjfiewfewf
+
+A web app to find friends with common interests
